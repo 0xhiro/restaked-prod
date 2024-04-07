@@ -8656,7 +8656,6 @@ p, blockquote, .alert, ul, ol {
     background: #f5f5f5;
     content: "\ebfa";
     color: #000;
-    font-family: 'icomoon' !important;
     border-radius: 0.25rem;
     border-right: 1px solid #e5e5e5;
     border-top-right-radius: 0;
@@ -8830,7 +8829,6 @@ a:hover {
     top: 50%;
     content: "\ebde";
     display: block;
-    font-family: 'icomoon' !important;
     font-size: 1em;
     width: 1em;
     line-height: 1em; }
@@ -8888,7 +8886,6 @@ a:hover {
       top: 50%;
       left: 50%;
       content: "\ec41";
-      font-family: 'icomoon' !important;
       font-size: 1.125rem;
       color: #000; }
     .section-title .anchor:hover {
@@ -9482,15 +9479,11 @@ article > section > .row {
   transform: translate(0, 6.25rem); }
 
 @font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?pxhbgs");
-  src: url("../fonts/icomoon.eot?pxhbgs#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?pxhbgs") format("truetype"), url("../fonts/icomoon.woff?pxhbgs") format("woff"), url("../fonts/icomoon.svg?pxhbgs#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -13098,7 +13091,6 @@ article > section > .row {
         line-height: 1em;
         right: 30px;
         top: 50%;
-        font-family: 'icomoon' !important;
         font-size: 1.5rem;
         margin-top: -0.5em;
         color: #999999;
@@ -13210,7 +13202,6 @@ article > section > .row {
       height: 2.5rem;
       margin-right: 20px;
       border-radius: 50%;
-      font-family: 'icomoon' !important;
       margin-top: 0;
       background: #064CDB;
       color: #fff; }
@@ -13363,7 +13354,6 @@ article > section > .row {
     content: "\ebdc";
     top: 50%;
     left: 50%;
-    font-family: 'icomoon' !important;
     font-size: 1.125rem;
     color: #000; }
   .breadcrumb-back:not(:last-child) {
@@ -13579,7 +13569,6 @@ article > section > .row {
         line-height: 1em;
         right: 1rem;
         top: 50%;
-        font-family: 'icomoon' !important;
         font-size: 1.2rem;
         margin-top: -0.5em;
         color: #999999;
@@ -13629,7 +13618,6 @@ article > section > .row {
         line-height: 1em;
         right: 30px;
         top: 50%;
-        font-family: 'icomoon' !important;
         font-size: 1.2rem;
         margin-top: -0.5em;
         color: #999999;
@@ -13811,7 +13799,6 @@ html.active > body {
     top: 50%;
     content: "\ebde";
     display: block;
-    font-family: 'icomoon' !important;
     font-size: 1em;
     width: 10px;
     line-height: 1em; }
@@ -13943,7 +13930,6 @@ a.card {
       top: 50%;
       left: 50%;
       background: #fff;
-      font-family: 'icomoon' !important;
       font-size: 1.125rem;
       text-align: center;
       color: #000;
@@ -16231,7 +16217,6 @@ a.card {
     bottom: 0;
     left: 0;
     line-height: 4rem;
-    font-family: 'icomoon';
     font-size: 1.5rem;
     color: #000; }
   .owl-carousel .owl-nav button.owl-prev span,
@@ -16619,7 +16604,6 @@ a.card {
         width: 1em;
         line-height: 1em;
         top: 50%;
-        font-family: 'icomoon' !important;
         font-size: 1.5rem;
         margin-top: -0.5em; }
   .interpost[class*="-next"] a {
@@ -16634,7 +16618,6 @@ a.card {
       width: 1em;
       line-height: 1em;
       top: 50%;
-      font-family: 'icomoon' !important;
       font-size: 1.5rem;
       margin-top: -0.5em; }
 
@@ -16764,7 +16747,6 @@ a.card {
       width: 30px;
       margin-right: .25rem;
       vertical-align: middle;
-      font-family: 'icomoon' !important;
       font-size: 1rem;
       color: #999999; }
     .file-tree li span {
@@ -16803,7 +16785,6 @@ a.card {
       text-align: center;
       width: 1em;
       line-height: 1em;
-      font-family: 'icomoon' !important;
       font-size: 1rem;
       color: #999999; }
     .file-tree .file-tree-folder.open::before {
@@ -17176,4 +17157,3 @@ pre[class*="language-"] {
     margin-left: -30px;
     margin-right: -30px; }
 
-/*# sourceMappingURL=style.css.map */
