@@ -7,7 +7,7 @@ from ..utils.charts.generators.line_chart_generator import generate_line_chart_d
 
 API_KEY = os.environ.get('MAINNET_API')
 
-w3 = Web3(Web3.HTTPProvider('MAINNET_API'))
+w3 = Web3(Web3.HTTPProvider(API_KEY))
 
 def get_num_pods():
     start_block = 17445564  
