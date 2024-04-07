@@ -26,7 +26,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['restaked-staging-a672bdd3da7f.herokuapp.com']
+ALLOWED_HOST = os.environ.get('ALLOWED_HOST', '')
+
+# Add the value to ALLOWED_HOSTS
+ALLOWED_HOSTS = [ALLOWED_HOST]
 
 
 # Application definition
