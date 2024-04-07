@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+            <div>
+                {% include "components/_header.html" with tag="Real-time EigenLayer data & analytics" %}
+            </div>
+            <div>
+                {% include "components/_hero.html" with tag="Real-time EigenLayer data & analytics" %}
+            </div>
+            <div class="bg-dark text-white">
+                <div class="container">
+                <h1>Data Dashboard</h1>
+                            <div class="d-flex justify-content-center">
+                                    {% include "components/_chart.html" with chart_data=tvl_hist chart_id='tvl_hist' chart_title="Historical TVL (USD)" %}
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                {% include "components/_chart.html" with chart_data=num_pods_hist chart_id="num_pods_hist" chart_title="Total Number of EigenPods" %}
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                {% include "components/_chart.html" with chart_data=strat_breakdown chart_id="strat_breakdown" chart_title="Strategy Breakdown by Shares" %}
+                            </div>
+                        </div>
+            </div>
+            <div>
+                {% include "components/_footer.html" %}
+            </div>
+
+{% endblock %}

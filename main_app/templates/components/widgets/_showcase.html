@@ -1,0 +1,73 @@
+{% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/vendor.css' %}" rel="stylesheet">
+
+<section class="half bg-dark">
+    <div class="container-full mb-10">
+        <div class="row gutter-0 justify-content-center">
+            <div class="col-12">
+                <div class="card-deck">
+                    <!-- Card 1 -->
+                    <div class="card card-showcase lift bg-dark text-white">
+                        <img src="{% static 'images/avs.jpg' %}" class="card-img-top" alt="AVS Datasets">
+                        <div class="card-body">
+                            <h5 class="card-title">AVS Datasets</h5>
+                            <p class="card-text">Real-time on-chain data and analytics on Eigenlayer and its emerging ecosystem of Actively Validated Services (AVS).</p>
+                        </div>
+                        <div class="card-footer bg-dark text-white">
+                            <button class="btn btn-light" onclick="redirectToDocs()">Read Our Docs</button>
+                       </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="card card-showcase lift bg-dark text-white">
+                        <img src="{% static 'images/eth.jpg' %}" class="card-img-top" alt="Wallet Trackers">
+                        <div class="card-body">
+                            <h5 class="card-title">Wallet Trackers</h5>
+                            <p class="card-text">Track TVL and deposit/withdrawal flows for all EigenLayer operators.</p>
+                        </div>
+                        <div class="card-footer bg-dark text-white">
+                          <button class="btn btn-light" onclick="window.location.href='/dashboard/'">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="card card-showcase lift bg-dark text-white">
+                        <img src="{% static 'images/analytics.jpg' %}" class="card-img-top" alt="On-chain Data Analytics">
+                        <div class="card-body">
+                            <h5 class="card-title">On-chain Data Analytics</h5>
+                            <p class="card-text">Explore our expanding suite of analytics for on-chain EigenLayer data.</p>
+                        </div>
+                        <div class="card-footer bg-dark text-white">
+                          <button class="btn btn-light" onclick="window.location.href='/dashboard/'">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="card card-showcase lift bg-dark text-white">
+                        <img src="{% static 'images/api.jpg' %}" class="card-img-top" alt="EigenLayer Data APIs">
+                        <div class="card-body">
+                            <h5 class="card-title">EigenLayer Data APIs</h5>
+                            <p class="card-text">Query robust data sets on EigenLayer and the expanding AVS ecosystem with Restaked.app's EigenLayer data API.</p>
+                        </div>
+                        <div class="card-footer bg-dark text-white">
+                          <button class="btn btn-light" onclick="window.location.href='/dashboard/'">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .card-img-top {
+        height: 200px; /* Set the desired height for the images */
+        object-fit: cover; /* Maintain aspect ratio and cover entire space */
+    }
+</style>
+<script>
+  function redirectToDocs() {
+      window.location.href = "https://restaked-app.gitbook.io/restaked.app-api-documentation";
+  }
+</script>

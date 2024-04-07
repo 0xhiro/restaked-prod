@@ -1,0 +1,14 @@
+{% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/vendor.css' %}" rel="stylesheet">
+
+<div class="card card-showcase lift bg-dark text-white">
+  <img src="{{ img }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ hed }}</h5>
+    <p class="card-text">{{ txt }}</p>
+  </div>
+  <div class="card-footer bg-dark text-white">
+    <a href="https://restaked-app.gitbook.io/restaked.app-api-documentation" class="btn btn-light">Read Our Docs</a>
+  </div>
+</div>

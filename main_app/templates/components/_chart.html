@@ -1,0 +1,22 @@
+{% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link href="{% static 'css/vendor.css' %}" rel="stylesheet">
+
+<h4 class="my-4">{{ chart_title }}</h4>
+<div class="row">
+    <div class="chart-container" style="position: relative; height:30vh; width:60vw">
+        <canvas id={{ chart_id }}></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ctx = document.getElementById('{{ chart_id }}').getContext('2d');
+    const chartData = {{ chart_data|safe }}
+
+    new Chart(ctx, chartData); // `chartData` should include both `data` and `options`
+});
+</script>
+
+
